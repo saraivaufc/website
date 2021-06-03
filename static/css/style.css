@@ -444,3 +444,7 @@ small { display: none;}
 .p-3{
 	padding: 30px;
 }
+
+.img.responsive-img{
+    max-width: 100px;
+}
