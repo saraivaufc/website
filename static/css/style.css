@@ -445,6 +445,6 @@ small { display: none;}
 	padding: 30px;
 }
 
-.img.responsive-img{
+.card-content .responsive-img{
     max-width: 100px;
 }
