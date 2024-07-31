@@ -1,10 +1,12 @@
 body {
-	color: #333;
+	background:#000;
 	font-size: 16px;
 }
+
 a {
 	color: #9930ea;
 }
+
 blockquote {
 	border-left: 5px solid #795548;
 	color: #795548;
@@ -36,12 +38,15 @@ nav i {
 	top: 5px;
 }
 main {
-	background: url(../../static/img/bg.png) repeat;
 	padding-left: 300px;
 }
 
 .page-title{
-	background-color: #6666cc;
+	background-color: #7373c434;
+}
+
+.page-text{
+	background-color: #ffffff96;
 }
 
 ul.side-nav {
@@ -63,8 +68,6 @@ ul.table-of-contents li.logo a:hover {
 	font-weight: 200;
 }
 ul.side-nav.fixed li.logo {
-	background-color: #fafafa;
-	border-bottom: 1px solid #ddd;
 	box-sizing: border-box;
 	min-height: 250px;
 	padding: 0px;
@@ -72,6 +75,16 @@ ul.side-nav.fixed li.logo {
 ul.side-nav.fixed li.logo a {
 	font-weight: 200;
 	line-height: 100%;
+}
+
+ul.side-nav.fixed li.logo a span {
+	font-size: 0.8em;
+	font-weight: 900;
+}
+
+ul.side-nav.fixed li.logo a span {
+	font-size: 0.5em;
+	font-weight: 900;
 }
 
 ul.side-nav.fixed li.bold{
@@ -83,13 +96,9 @@ ul.side-nav.fixed li.bold span{
 }
 
 ul.table-of-contents li:not(.logo) a.active,
-ul.table-of-contents li:not(.logo) a:hover {
+ul.table-of-contents li:not(.logo) a:hover{
 	background-color: #fafafa;
 	border-left: 3px solid ;
-}
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
-ul#slide-out li:not(.logo) a span {
-	color: #333 !important;
 }
 
 li.logo img{
@@ -108,7 +117,7 @@ li.logo span {
 	font-size: .8em;
 	line-height: inherit;
 	margin: inherit;
-	font-weight: inherit;
+	font-weight: bold;
 }
 .container {
 	width: 95%
@@ -300,7 +309,7 @@ a.hoverline:hover {
 }
 small { display: none;}
 .grey-text {
-	color: #666 !important;
+	color: #111010 !important;
 }
 .teal-text {
 	color: #008073 !important
@@ -450,4 +459,108 @@ small { display: none;}
 
 .card-content .responsive-img{
     max-width: 100px;
+}
+
+
+
+
+
+
+
+#info {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.lil-gui {
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+@media all and ( max-width: 640px ) {
+	.lil-gui.root { 
+		right: auto;
+		top: auto;
+		max-height: 50%;
+		max-width: 80%;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+#overlay {
+	position: absolute;
+	font-size: 16px;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(0,0,0,0.7);
+}
+
+#overlay button {
+	background: transparent;
+	border: 0;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 4px;
+	color: #ffffff;
+	padding: 12px 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#notSupported {
+	width: 50%;
+	margin: auto;
+	background-color: #f00;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+
+canvas{
+	position: fixed;
+	z-index: -1;
+	top: 0%;
+}
+
+ul.side-nav, li.logo{
+	background-color: transparent !important;
+	color: white;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.685);	
+}
+
+.card i.right {
+    color: black;
+}
+
+.card * {
+	color: black;
+}
+
+.card a {
+	text-transform: none;
+	color: #9930ea;
+	margin-right: 0px;
 }
