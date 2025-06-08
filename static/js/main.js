@@ -241,7 +241,7 @@ function init() {
     controls.dragToLook = true;
 
     stats = new Stats();
-    document.body.appendChild(stats.dom);
+    //document.body.appendChild(stats.dom); -- Apresenta os FPS
 
     window.addEventListener('resize', onWindowResize, false);
     
