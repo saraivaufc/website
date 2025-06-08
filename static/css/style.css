@@ -181,10 +181,15 @@ section#projects .card {
 
 .card .role {
 	font-size: 1.25rem;
-  position: absolute;
-  right: 38px;
-  top: 35px;
+  	position: absolute;
+  	right: 38px;
+  	top: 35px;
 }
+
+.card .card-action {
+	padding: 10px;
+}
+
 .card li a {
 	margin-right: 0;
 	color: #333;
@@ -195,7 +200,7 @@ section#projects .card {
 	font-weight: 500;
 }
 .card .card-content {
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 }
 .card .card-content p {
 	padding: 5px 0 0;
