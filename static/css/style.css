@@ -569,3 +569,10 @@ ul.side-nav, li.logo{
 	color: #9930ea;
 	margin-right: 0px;
 }
+
+
+@media print {
+  .table-of-contents {
+    display: none;
+  }
+}
