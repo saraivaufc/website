@@ -402,7 +402,6 @@ small { display: none;}
 	h3,
 	.container {
     position: relative;
-    top: 64px;
 	}
 	section#intro {
 	    margin-bottom: -64px;
