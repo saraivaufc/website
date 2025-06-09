@@ -293,10 +293,13 @@ a.hoverline:hover {
 	height: auto;
 }
 .card.medium .card-image {
-	height: 240px;
+	height: 200px;
 }
 .card-action a.btn-floating {
 	margin-bottom: 0;
+}
+.card .card-image img {
+	height: 100%;
 }
 
 #contact a:not(.btn-floating) {
