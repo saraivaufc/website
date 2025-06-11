@@ -94,11 +94,19 @@ let satellites = [
     }
 ];
 
-
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
 
 init();
 
 function init() {
+
+    if (isMobileDevice()) {
+        console.log("Dispositivo móvel detectado. Planeta não será exibido.");
+        return;
+    }
+
     
     const loader = new GLTFLoader();
 
