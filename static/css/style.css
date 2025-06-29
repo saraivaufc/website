@@ -354,7 +354,7 @@ small { display: none;}
 	}
 	nav {
 		background: #fff;
-		height: 85px;
+		height: 100px;
 		position: absolute;
 	}
 	nav a.button-collapse,
@@ -388,7 +388,7 @@ small { display: none;}
 	.name-title > span,
 	.name-title > a {
     position: relative;
-    line-height: 20px;
+    line-height: 28px;
 	}
 	.name-title a {
     font-size: 22px;
