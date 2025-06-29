@@ -69,7 +69,7 @@ ul.table-of-contents li.logo a:hover {
 }
 ul.side-nav.fixed li.logo {
 	box-sizing: border-box;
-	min-height: 300px;
+	min-height: 320px;
 	padding: 0px;
 }
 ul.side-nav.fixed li.logo a {
