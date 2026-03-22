@@ -296,6 +296,8 @@ function render() {
     // update satellite positions for orbiting the planet
     satellites.forEach(satellite => {
         const { mesh, orbitRadius, period, inclination, initialOffset } = satellite;
+        if (!mesh) return; // FIX: Prevent error before model is fully loaded
+
         const orbitSpeed = 2 * Math.PI / period;
 
         // Calculate satellite position with initial offset
@@ -316,6 +318,8 @@ function render() {
 
     let dSatelliteMin = Infinity;
     satellites.forEach(satellite => {
+        if (!satellite.mesh) return; // FIX: Prevent error on camera orbit distance calculation
+
         dSatelliteVec.subVectors(camera.position, satellite.mesh.position);
         const distance = dSatelliteVec.length();
         if (distance < dSatelliteMin) {

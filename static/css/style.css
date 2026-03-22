@@ -1,15 +1,21 @@
 body {
 	background:#000;
 	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+	color: #1e293b;
 }
 
 a {
-	color: #9930ea;
+	color: #10b981;
+	transition: color 0.3s ease;
+}
+a:hover {
+	color: #34d399;
 }
 
 blockquote {
-	border-left: 5px solid #795548;
-	color: #795548;
+	border-left: 5px solid #10b981;
+	color: #334155;
 	font-size: 125%;
 	font-weight: 400;
 	margin: 20px 0;
@@ -42,7 +48,13 @@ main {
 }
 
 .page-title{
-	background-color: #7373c434;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 8px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #1e293b;
 }
 
 .page-text{
@@ -57,7 +69,7 @@ ul.side-nav li {
 }
 ul.side-nav.fixed a {
 	box-sizing: content-box;
-	color: #444;
+	color: #334155;
 	display: block;
 	padding: 0px 0 12px;
 }
@@ -97,8 +109,9 @@ ul.side-nav.fixed li.bold span{
 
 ul.table-of-contents li:not(.logo) a.active,
 ul.table-of-contents li:not(.logo) a:hover{
-	background-color: #fafafa;
-	border-left: 3px solid ;
+	background-color: rgba(0, 0, 0, 0.05) !important;
+	border-left: 3px solid #10b981;
+	color: #10b981 !important;
 }
 
 li.logo img{
@@ -192,12 +205,13 @@ section#projects .card {
 
 .card li a {
 	margin-right: 0;
-	color: #333;
-	border-bottom: 2px solid #ffab40;
+	color: #10b981;
+	border-bottom: 1px solid rgba(16, 185, 129, 0.4);
+	transition: all 0.2s ease;
 }
 .card li a:hover {
-	color: #333;
-	font-weight: 500;
+	color: #34d399;
+	border-bottom: 1px solid #34d399;
 }
 .card .card-content {
 	padding-bottom: 0px;
@@ -228,7 +242,7 @@ section#projects .card {
 }
 .card-action span {
 	font-size: 85%;
-	color: #666;
+	color: #94a3b8;
 }
 .card ul {
 	margin-bottom: 0;
@@ -239,7 +253,7 @@ section#projects .card {
 	margin-left: 24px;
 }
 .card ul li li {
-  color: #666;
+  color: #94a3b8;
   font-size: 13px;
 }
 .card .card-title {
@@ -550,25 +564,33 @@ canvas{
 }
 
 ul.side-nav, li.logo{
-	background-color: #ffffff !important;
-	color: white;
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	color: #1e293b;
 }
 
 .card {
-	background-color: rgba(255, 255, 255, 0.685);	
+	background-color: rgba(15, 23, 42, 0.65) !important;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	color: #f1f5f9;
 }
 
 .card i.right {
-    color: black;
+    color: #cbd5e1;
 }
 
 .card * {
-	color: black;
+	color: #f1f5f9;
 }
 
 .card a {
 	text-transform: none;
-	color: #9930ea;
+	color: #10b981;
 	margin-right: 0px;
 }
 
@@ -577,4 +599,32 @@ ul.side-nav, li.logo{
   .table-of-contents {
     display: none;
   }
+}
+
+.emerald {
+    background-color: rgba(16, 185, 129, 0.8) !important;
+    backdrop-filter: blur(5px);
+}
+.emerald:hover {
+    background-color: rgba(16, 185, 129, 1) !important;
+}
+
+.card .card-reveal {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    color: #f1f5f9;
+}
+
+.card .card-reveal .card-title {
+    color: #f8fafc !important;
+}
+
+/* Fix mobile nav */
+@media (max-width: 992px) {
+    nav, nav.hide-on-large.only.trigger {
+        background-color: rgba(255, 255, 255, 0.85) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    .name-title a { color: #1e293b !important; }
+    .name-title span { color: #475569 !important; }
 }
