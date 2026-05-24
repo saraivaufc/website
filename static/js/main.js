@@ -89,7 +89,7 @@ let satellites = [
         orbitRadius: radius * (1 + sentinel2AltitudeKM/radius),
         period: 99 * 60, // Approximate period in seconds
         scale:  sentinel2Scale,
-        inclination: sentinelOrbitInclinationDegrees * (radius / 180),
+        inclination: sentinelOrbitInclinationDegrees * (Math.PI / 180),
         initialOffset:  Math.PI * 1.5
     }
 ];
@@ -111,8 +111,8 @@ function init() {
     const loader = new GLTFLoader();
 
     camera = new THREE.PerspectiveCamera(30, SCREEN_WIDTH / SCREEN_HEIGHT, 50, 1e7);
-    camera.position.z = radius * 5;
-    camera.position.x = radius * -0.3;
+    camera.position.z = radius * 4.8;
+    camera.position.x = radius * -1.85;
 
     scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2(0x000000, 0.00000025);
@@ -137,7 +137,7 @@ function init() {
             action.play();
         });
 
-        meshPlanet.position.set(1, 1, 10);
+        meshPlanet.position.set(0, 0, 0);
         meshPlanet.rotation.y = 0;
         meshPlanet.rotation.z = tilt;
         meshPlanet.scale.set(radius * 0.8, radius * 0.8, radius * 0.8); 
