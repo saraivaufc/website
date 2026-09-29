@@ -88,9 +88,14 @@ ul.table-of-contents li.logo a:hover {
 	border: none;
 	font-weight: 200;
 }
+ul.side-nav.fixed {
+	height: 100%;
+	overflow-y: auto;
+}
+
 ul.side-nav.fixed li.logo {
 	box-sizing: border-box;
-	min-height: 270px;
+	min-height: 330px;
 	padding: 0px;
 }
 ul.side-nav.fixed li.logo a {
@@ -896,8 +901,68 @@ ul.side-nav.fixed li.bold a {
 }
 
 
+.lang-switch {
+	align-items: center;
+	background: rgba(3, 7, 18, 0.72);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(148, 163, 184, 0.28);
+	border-radius: 999px;
+	display: inline-flex;
+	gap: 6px;
+	justify-content: center;
+	padding: 5px;
+	position: fixed;
+	right: max(14px, env(safe-area-inset-right));
+	top: max(14px, env(safe-area-inset-top));
+	z-index: 1002;
+}
+
+.lang-switch .lang-btn {
+	background: transparent;
+	border: 1px solid rgba(148, 163, 184, 0.5);
+	border-radius: 999px;
+	color: #e2e8f0;
+	cursor: pointer;
+	font-family: Inter, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	line-height: 1;
+	min-width: 38px;
+	padding: 7px 9px;
+}
+
+.lang-switch .lang-btn.is-active {
+	background: #10b981;
+	border-color: #10b981;
+	color: #042f2e;
+}
+
+.lang-switch .lang-btn:hover {
+	border-color: #34d399;
+}
+
+.lang-switch .lang-btn.is-active:hover {
+	color: #042f2e;
+}
+
+.lang-switch .lang-btn:focus-visible {
+	outline: 2px solid #5eead4;
+	outline-offset: 2px;
+}
+
+@media (max-width: 992px) {
+	.name-title {
+		box-sizing: border-box;
+		padding-left: 52px;
+		padding-right: 96px;
+	}
+}
+
 @media print {
-  .table-of-contents {
+  .table-of-contents,
+  .lang-switch {
     display: none;
   }
 }

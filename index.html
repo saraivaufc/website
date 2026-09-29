@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -19,23 +19,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
-    <!-- Estilos Personalizados-->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="static/css/style.css">
-    <title>Marciano Saraiva | Produto e inteligência geoespacial para Agro, ESG e Crédito Rural</title>
+    <title>Marciano Saraiva | Geospatial Product and Intelligence for Agriculture, ESG, and Rural Credit</title>
 
     <!-- Open Graph-->
-    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
     <meta property="og:type" content="website">
     <meta name="author" content="Marciano Machado Saraiva">
-    <meta property="og:title" content="Marciano Saraiva | Produto e inteligência geoespacial para Agro, ESG e Crédito Rural">
+    <meta property="og:title"
+        content="Marciano Saraiva | Geospatial Product and Intelligence for Agriculture, ESG, and Rural Credit">
     <meta name="description"
-        content="Marciano Saraiva, fundador da i2Geo. Lidera produtos de inteligência geoespacial usados por bancos, seguradoras e empresas do agro para decidir crédito, risco e conformidade ESG.">
+        content="Marciano Saraiva, founder of i2Geo. He leads geospatial intelligence products used by banks, insurers, and agribusiness companies to decide on credit, risk, and ESG compliance.">
     <meta property="og:description"
-        content="Marciano Saraiva, fundador da i2Geo. Lidera produtos de inteligência geoespacial usados por bancos, seguradoras e empresas do agro para decidir crédito, risco e conformidade ESG." />
+        content="Marciano Saraiva, founder of i2Geo. He leads geospatial intelligence products used by banks, insurers, and agribusiness companies to decide on credit, risk, and ESG compliance." />
     <meta name="keywords"
-        content="Marciano Saraiva, Marciano Machado Saraiva, i2Geo, Crop Monitor, Serasa Experian, crédito rural, ESG, inteligência geoespacial, liderança de produto, MapBiomas, Agrosatélite">
+        content="Marciano Saraiva, Marciano Machado Saraiva, i2Geo, Crop Monitor, Serasa Experian, rural credit, ESG, geospatial intelligence, product leadership, MapBiomas, Agrosatelite, remote sensing">
 
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="person-jsonld">
     {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -43,10 +45,10 @@
         "alternateName": "Marciano Saraiva",
         "url": "https://www.saraiva.dev",
         "image": "https://www.saraiva.dev/static/img/Marciano Saraiva.png",
-        "jobTitle": "Fundador e Diretor Técnico",
+        "jobTitle": "Founder and Technical Director",
         "worksFor": {
             "@type": "Organization",
-            "name": "i2Geo Inteligência Geoespacial",
+            "name": "i2Geo Geospatial Intelligence",
             "url": "https://i2geo.com"
         },
         "sameAs": [
@@ -84,66 +86,77 @@
 </head>
 
 <body>
-    <!-- Menu de Navegação -->
+    <div class="lang-switch" role="group" data-i18n-attr="aria-label:ui.language" aria-label="Language">
+        <button type="button" class="lang-btn is-active" data-set-lang="en" aria-pressed="true"
+            data-i18n-attr="aria-label:ui.english" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-set-lang="pt" aria-pressed="false"
+            data-i18n-attr="aria-label:ui.portuguese" aria-label="Portuguese">PT</button>
+    </div>
+    <!-- Navigation -->
     <nav class="hide-on-small-only">
         <ul class="side-nav fixed section table-of-contents">
             <li class="logo text-center">
-                <img src="static/img/my_photo.png" width="150px" height="150px" />
-                <a aria-label="Navegar para o início da página" href="#intro" class="brand-logo ">
+                <img src="static/img/my_photo.png" width="150px" height="150px" alt="Marciano Saraiva" />
+                <a data-i18n-attr="aria-label:nav.homeAria" aria-label="Go to the top of the page" href="#intro"
+                    class="brand-logo ">
                     <h1>Marciano Saraiva</h1>
-                    <span class="light">Fundador e Diretor Técnico na i2Geo</span>
-                    <span class="light">Produto e inteligência geoespacial</span>
+                    <span class="light" data-i18n="nav.role">Founder and Technical Director at i2Geo</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Sobre" href="#about" class="waves-effect waves-dark ">
-                    <i class="mdi-social-person small"></i>
-                    <span>Sobre</span>
-                </a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navegar para a seção Impacto" href="#impacto" class="waves-effect waves-dark ">
-                    <i class="mdi-action-dashboard small"></i>
-                    <span>Impacto</span>
-                </a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navegar para a seção Experiência Profissional" href="#backgroud"
+                <a data-i18n-attr="aria-label:nav.aboutAria" aria-label="Go to the About section" href="#about"
                     class="waves-effect waves-dark ">
+                    <i class="mdi-social-person small"></i>
+                    <span data-i18n="nav.about">About</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a data-i18n-attr="aria-label:nav.impactAria" aria-label="Go to the Impact section" href="#impacto"
+                    class="waves-effect waves-dark ">
+                    <i class="mdi-action-dashboard small"></i>
+                    <span data-i18n="nav.impact">Impact</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a data-i18n-attr="aria-label:nav.experienceAria" aria-label="Go to the Professional Experience section"
+                    href="#backgroud" class="waves-effect waves-dark ">
                     <i class="mdi-action-trending-up small"></i>
-                    <span>Experiência</span>
+                    <span data-i18n="nav.experience">Experience</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Resultados" href="#projects" class="waves-effect waves-dark ">
+                <a data-i18n-attr="aria-label:nav.resultsAria" aria-label="Go to the Results section" href="#projects"
+                    class="waves-effect waves-dark ">
                     <i class="mdi-av-web small"></i>
-                    <span>Resultados</span>
+                    <span data-i18n="nav.results">Results</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Como atuo" href="#habilidades"
+                <a data-i18n-attr="aria-label:nav.howAria" aria-label="Go to the How I work section" href="#habilidades"
                     class="waves-effect waves-dark ">
                     <i class="mdi-av-equalizer small"></i>
-                    <span>Como atuo</span>
+                    <span data-i18n="nav.how">How I work</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Formação" href="#educacao"
-                    class="waves-effect waves-dark ">
+                <a data-i18n-attr="aria-label:nav.educationAria" aria-label="Go to the Education section"
+                    href="#educacao" class="waves-effect waves-dark ">
                     <i class="mdi-social-school small"></i>
-                    <span>Formação</span>
+                    <span data-i18n="nav.education">Education</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Publicações" href="#papers" class="waves-effect waves-dark ">
+                <a data-i18n-attr="aria-label:nav.publicationsAria" aria-label="Go to the Publications section"
+                    href="#papers" class="waves-effect waves-dark ">
                     <i class="mdi-action-book small"></i>
-                    <span>Publicações</span>
+                    <span data-i18n="nav.publications">Publications</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Contato" href="#contact" class="waves-effect waves-dark ">
+                <a data-i18n-attr="aria-label:nav.contactAria" aria-label="Go to the Contact section" href="#contact"
+                    class="waves-effect waves-dark ">
                     <i class="mdi-content-mail small"></i>
-                    <span>Contato</span>
+                    <span data-i18n="nav.contact">Contact</span>
                 </a>
             </li>
         </ul>
@@ -156,55 +169,61 @@
             <i class="mdi-navigation-menu"></i>
         </a>
         <div class="name-title">
-            <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="">
+            <a id="name" data-i18n-attr="aria-label:nav.homeAria" aria-label="Go to the top of the page" href="#main"
+                class="">
                 Marciano Saraiva
             </a>
-            <span class=" light">Fundador e Diretor Técnico na i2Geo</span>
+            <span class="light" data-i18n="nav.role">Founder and Technical Director at i2Geo</span>
         </div>
     </nav>
 
     <nav class="hide-on-large only">
         <ul id="slide-out" class="side-nav">
             <li class="bold">
-                <a aria-label="Navegar para a seção Sobre" href="#about" class="waves-effect waves-dark ">
-                    <i class="mdi-social-person small"></i><span>Sobre</span>
-                </a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navegar para a seção Impacto" href="#impacto" class="waves-effect waves-dark ">
-                    <i class="mdi-action-dashboard small"></i><span>Impacto</span>
-                </a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navegar para a seção Experiência Profissional" href="#backgroud"
+                <a data-i18n-attr="aria-label:nav.aboutAria" aria-label="Go to the About section" href="#about"
                     class="waves-effect waves-dark ">
-                    <i class="mdi-action-trending-up small"></i><span>Experiência</span>
+                    <i class="mdi-social-person small"></i><span data-i18n="nav.about">About</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Resultados" href="#projects" class="waves-effect waves-dark ">
-                    <i class="mdi-av-web small"></i><span>Resultados</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navegar para a seção Como atuo" href="#habilidades" class="waves-effect waves-dark ">
-                    <i class="mdi-av-equalizer small"></i><span>Como atuo</span>
-                </a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navegar para a seção Formação" href="#educacao"
+                <a data-i18n-attr="aria-label:nav.impactAria" aria-label="Go to the Impact section" href="#impacto"
                     class="waves-effect waves-dark ">
-                    <i class="mdi-social-school small"></i><span>Formação</span>
+                    <i class="mdi-action-dashboard small"></i><span data-i18n="nav.impact">Impact</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Publicações" href="#papers" target="_blank"
+                <a data-i18n-attr="aria-label:nav.experienceAria" aria-label="Go to the Professional Experience section"
+                    href="#backgroud" class="waves-effect waves-dark ">
+                    <i class="mdi-action-trending-up small"></i><span data-i18n="nav.experience">Experience</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a data-i18n-attr="aria-label:nav.resultsAria" aria-label="Go to the Results section" href="#projects"
                     class="waves-effect waves-dark ">
-                    <i class="mdi-action-book small"></i><span>Publicações</span>
+                    <i class="mdi-av-web small"></i><span data-i18n="nav.results">Results</span></a>
+            </li>
+            <li class="bold">
+                <a data-i18n-attr="aria-label:nav.howAria" aria-label="Go to the How I work section" href="#habilidades"
+                    class="waves-effect waves-dark ">
+                    <i class="mdi-av-equalizer small"></i><span data-i18n="nav.how">How I work</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Navegar para a seção Contato" href="#contact" class="waves-effect waves-dark ">
-                    <i class="mdi-content-mail small"></i><span>Contato</span>
+                <a data-i18n-attr="aria-label:nav.educationAria" aria-label="Go to the Education section"
+                    href="#educacao" class="waves-effect waves-dark ">
+                    <i class="mdi-social-school small"></i><span data-i18n="nav.education">Education</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a data-i18n-attr="aria-label:nav.publicationsAria" aria-label="Go to the Publications section"
+                    href="#papers" class="waves-effect waves-dark ">
+                    <i class="mdi-action-book small"></i><span data-i18n="nav.publications">Publications</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a data-i18n-attr="aria-label:nav.contactAria" aria-label="Go to the Contact section" href="#contact"
+                    class="waves-effect waves-dark ">
+                    <i class="mdi-content-mail small"></i><span data-i18n="nav.contact">Contact</span>
                 </a>
             </li>
         </ul>
@@ -214,69 +233,79 @@
     <main id="main">
         <section id="intro" class="section scrollspy hero-section">
             <div class="hero-copy">
-                <p class="hero-kicker">Produto, dados e decisão no agronegócio</p>
-                <h2>Transformo imagens de satélite em decisões para Agro, ESG e Crédito Rural.</h2>
-                <p>
-                    Sou Marciano Saraiva, fundador e diretor técnico da i2Geo. Desenvolvo soluções de inteligência geoespacial para bancos, seguradoras e 
-                    empresas do agro usarem em crédito, precificação de risco e ESG.
+                <p class="hero-kicker" data-i18n="hero.kicker">Product, data, and decisions in agribusiness</p>
+                <h2 data-i18n="hero.title">I turn satellite imagery into decisions for agriculture, ESG, and rural
+                    credit.</h2>
+                <p data-i18n="hero.lead">
+                    I am Marciano Saraiva, founder and technical director of i2Geo. I build i2Crop and i2Check —
+                    geographic information systems banks, insurers, and agribusiness companies use to read the crop
+                    season and
+                    land-use compliance from satellite imagery.
                 </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn waves-effect waves-light emerald">Ver resultados</a>
-                    <a href="#contact" class="btn-flat waves-effect">Falar comigo</a>
+                    <a href="#projects" class="btn waves-effect waves-light emerald" data-i18n="hero.ctaResults">See
+                        results</a>
+                    <a href="#contact" class="btn-flat waves-effect" data-i18n="hero.ctaContact">Get in touch</a>
                 </div>
-                <div class="hero-metrics" aria-label="Resumo profissional">
-                    <span><b>9+</b> anos liderando produtos geoespaciais</span>
-                    <span><b>14</b> pessoas lideradas</span>
-                    <span><b>1.800+</b> citações aplicadas à operação</span>
+                <div class="hero-metrics" data-i18n-attr="aria-label:hero.metricsAria"
+                    aria-label="Professional summary">
+                    <span data-i18n-html="hero.years"><b>9+</b> years in geotechnology</span>
+                    <span data-i18n-html="hero.leadYears"><b>3–4</b> years leading product and team</span>
+                    <span data-i18n-html="hero.firstAuthor"><b>1st author</b> center pivots, 2020</span>
                 </div>
             </div>
         </section>
 
         <section id="about" class="section scrollspy">
-            <h3 class="page-title">Sobre</h3>
+            <h3 class="page-title" data-i18n="about.title">About</h3>
             <div class="container flow-text">
                 <div class="card">
                     <div class="card-content">
-                        <p>
-                            Como fundador e diretor técnico da <a href="https://i2geo.com"
-                                target="_blank">i2Geo</a>, conecto estratégia de negócio à execução.
-                            Ajudo empresas de <b>agronegócio, crédito rural, seguro e ESG</b> a
-                            decidir com evidência de satélite — em escala, com qualidade e no tempo
-                            da operação.
+                        <p data-i18n-html="about.p1">
+                            As founder and technical director of <a href="https://i2geo.com" target="_blank">i2Geo</a>,
+                            I build <b>i2Crop</b> and <b>i2Check</b>. i2Crop reads the crop season from Sentinel-2 and
+                            Landsat time series. i2Check reads land use and environmental compliance from satellite
+                            imagery and public territorial layers. Banks, insurers, and agribusiness companies use
+                            them for credit, insurance claims, and ESG.
                         </p>
                         <br>
-                        <p>
-                            O mercado costuma me ler pelo stack técnico. O que sustenta a trajetória
-                            é outra coisa: <b>produtos em produção, times liderados, decisões de
-                            crédito e conformidade, e impacto nacional</b> — do Crop Monitor na
-                            Serasa Experian ao mapeamento de uso da terra do MapBiomas.
+                        <p data-i18n-html="about.p2">
+                            The market often reads me through the technical stack. The track record rests on
+                            <b>products in production, teams led, credit and compliance decisions, and national-scale
+                                impact</b>
+                            — from Crop Monitor at Serasa Experian to MapBiomas land-use mapping.
                         </p>
                         <br>
-                        <p style="font-size: 1.1rem;"><b>Três problemas que sei resolver:</b></p>
+                        <p style="font-size: 1.1rem;"><b data-i18n="about.problemsTitle">Three problems I know how to
+                                solve:</b></p>
                         <ul style="margin-top: 15px; margin-left: 5px;">
                             <li style="margin-bottom: 20px; line-height: 1.6;">
                                 <i class="fa fa-bullseye emerald-text" style="color: #10b981; margin-right: 8px;"></i>
-                                <b>Carteira de crédito e seguro rural sem visibilidade de safra:</b>
-                                liderei o Crop Monitor — da concepção ao produto comercial da Serasa
-                                Experian — para bancos, cooperativas e seguradoras acompanharem
-                                plantio, desenvolvimento e colheita, reduzindo visita a campo, fraude
-                                e surpresa de quebra.
+                                <span data-i18n-html="about.problemCredit"><b>Agricultural credit and insurance
+                                        portfolios with no visibility into the crop season:</b>
+                                    I led Crop Monitor — from concept to Serasa Experian's commercial product — so
+                                    banks, cooperatives, and insurers can follow planting, crop development, and
+                                    harvest, cutting field visits, fraud, and surprise crop losses.</span>
                             </li>
                             <li style="margin-bottom: 20px; line-height: 1.6;">
                                 <i class="fa fa-users emerald-text" style="color: #10b981; margin-right: 8px;"></i>
-                                <b>Produto travado entre negócio e engenharia:</b> atuei como PM, PO
-                                e líder técnico ao mesmo tempo. Orquestrei um time de 14 pessoas
-                                (desenvolvimento e geoprocessamento) e entreguei Crop Monitor,
-                                Relatório de Desmatamento, Valoração de Imóveis, Laudo de Sinistro e
-                                Análise Histórica de Imóveis Rurais.
+                                <span data-i18n-html="about.problemProduct"><b>A product stuck between the business and
+                                        engineering:</b> I worked as PM, PO, and technical lead at the same time. I
+                                    led one team of 14 (software development and geoprocessing), formed at Brain and
+                                    continued at Serasa Experian after the acquisition — Brain → Serasa — and delivered
+                                    Crop Monitor, the Deforestation Report, Property Valuation, the Loss Assessment
+                                    Report, and Historical Analysis of Rural Properties.</span>
                             </li>
                             <li style="margin-bottom: 20px; line-height: 1.6;">
                                 <i class="fa fa-globe emerald-text" style="color: #10b981; margin-right: 8px;"></i>
-                                <b>Risco ambiental e conformidade em escala de país:</b> participei
-                                de MapBiomas, da 4ª Comunicação Nacional do Brasil à UNFCCC e de
-                                mapeamentos de irrigação usados em política pública. Modelos com
-                                acurácia acima de 90% no território nacional, pesquisa citada mais
-                                de 1.800 vezes — e, o que importa, virada operação.
+                                <span data-i18n-html="about.problemRisk"><b>Environmental risk and compliance at country
+                                        scale:</b> I contributed to MapBiomas, Brazil's Fourth National Communication to
+                                    the UNFCCC, and irrigation maps used in public policy. Models with accuracy above
+                                    90% across the national territory, turned into day-to-day operations.
+                                    <b>First author:</b> center pivots (Remote Sensing, 2020) — the paper I published.
+                                    <b>Coauthor in the network:</b> MapBiomas, about 1,800
+                                    citations (Souza Jr. et al., Remote Sensing, 2020) — adoption of the shared
+                                    infrastructure, not a personal h-index.</span>
                             </li>
                         </ul>
                     </div>
@@ -285,47 +314,49 @@
         </section>
 
         <section id="impacto" class="section scrollspy">
-            <h3 class="page-title">Impacto</h3>
+            <h3 class="page-title" data-i18n="impact.title">Impact</h3>
             <div class="container">
                 <div class="impact-grid">
                     <div class="card impact-card">
                         <div class="card-content">
-                            <p class="impact-label">Crédito e seguro</p>
-                            <h4>Decisão de carteira com evidência de safra</h4>
-                            <p>
-                                Produtos agroambientais usados para monitorar operações rurais,
-                                antecipar quebra, reduzir visita a campo e dar lastro a concessão
-                                e sinistro.
+                            <p class="impact-label" data-i18n="impact.creditLabel">Credit and insurance</p>
+                            <h4 data-i18n="impact.creditTitle">Portfolio decisions backed by crop evidence</h4>
+                            <p data-i18n="impact.creditBody">
+                                Agro-environmental products used to monitor rural operations,
+                                anticipate crop failure, reduce field visits, and support credit approval
+                                and insurance claims.
                             </p>
                         </div>
                     </div>
                     <div class="card impact-card">
                         <div class="card-content">
-                            <p class="impact-label">Liderança</p>
-                            <h4>Time, produto e entrega no mesmo mandato</h4>
-                            <p>
-                                14 pessoas sob gestão. Traduzi demanda de cliente e diretoria em
-                                roadmap, arquitetura e operação — sem perder a qualidade do dado.
+                            <p class="impact-label" data-i18n="impact.leadershipLabel">Leadership</p>
+                            <h4 data-i18n="impact.leadershipTitle">Team, product, and delivery under the same mandate
+                            </h4>
+                            <p data-i18n="impact.leadershipBody">
+                                I translated client and executive demand into
+                                roadmap, architecture, and operations, while keeping data quality.
                             </p>
                         </div>
                     </div>
                     <div class="card impact-card">
                         <div class="card-content">
-                            <p class="impact-label">ESG e território</p>
-                            <h4>Conformidade e rastreabilidade em escala</h4>
-                            <p>
-                                Rastreabilidade da soja na COAMO, desmatamento, valoração de
-                                imóveis rurais e mapeamento nacional de uso da terra e irrigação.
+                            <p class="impact-label" data-i18n="impact.esgLabel">ESG and territory</p>
+                            <h4 data-i18n="impact.esgTitle">Compliance and traceability at scale</h4>
+                            <p data-i18n="impact.esgBody">
+                                Soy traceability at COAMO, deforestation, rural property valuation, and
+                                national mapping of land use and irrigation.
                             </p>
                         </div>
                     </div>
                     <div class="card impact-card">
                         <div class="card-content">
-                            <p class="impact-label">Ciência aplicada</p>
-                            <h4>Pesquisa que virou infraestrutura</h4>
-                            <p>
-                                Artigo de pivôs centrais (99% de precisão) virou método no
-                                MapBiomas. O paper de uso da terra é referência internacional.
+                            <p class="impact-label" data-i18n="impact.scienceLabel">Applied science</p>
+                            <h4 data-i18n="impact.scienceTitle">Research that became infrastructure</h4>
+                            <p data-i18n="impact.scienceBody">
+                                The center-pivot paper, where I am first author (99% precision), became a MapBiomas
+                                method. The land-use paper is a network article (Souza Jr. et al.): its citations
+                                measure adoption of that infrastructure.
                             </p>
                         </div>
                     </div>
@@ -334,95 +365,108 @@
         </section>
 
         <section id="backgroud" class="section scrollspy">
-            <h3 class="page-title">Experiência Profissional</h3>
+            <h3 class="page-title" data-i18n="experience.title">Professional Experience</h3>
             <div class="container">
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
                             <div class="col s12 m2">
-                                <img src="static/img/i2geo.png" class="responsive-img center-block">
+                                <img src="static/img/i2geo.png" class="responsive-img center-block" alt="i2Geo">
                             </div>
                             <div class="col s12 m10">
                                 <p>
                                     <span class="card-title">
-                                        <a href="https://i2geo.com" target="_blank" class="hoverline">
-                                            i2Geo Inteligência Geoespacial
+                                        <a href="https://i2geo.com" target="_blank" class="hoverline"
+                                            data-i18n="experience.i2geo.company">
+                                            i2Geo Geospatial Intelligence
                                         </a>
                                     </span>
                                 </p>
-                                <div class="">Fundador e Diretor Técnico  (Out 2025 -
-                                    Atualmente)</div>
+                                <div data-i18n="experience.i2geo.role">Founder and Technical Director (Oct 2025 -
+                                    Present)</div>
                             </div>
                         </div>
-                        <p>Assessorio executivos e tomadores de decisão em Agro, ESG e Crédito Rural a
-                            transformar inteligência geoespacial em produto, operação e vantagem competitiva.
+                        <p data-i18n="experience.i2geo.summary">I build i2Crop and i2Check at i2Geo: geographic
+                            information systems
+                            that read the crop season and territorial compliance from satellite imagery, for banks,
+                            insurers, and agribusiness companies. The method is satellite time series and computer
+                            vision.
                         </p>
                         <ul>
-                            <li>
-                                <b>Posicionamento de produto:</b> defino o problema de negócio, o recorte de
-                                decisão e a evidência que o dado precisa entregar — antes da arquitetura.
+                            <li data-i18n-html="experience.i2geo.b1">
+                                <b>What i2Geo builds:</b> i2Crop follows the crop season — vegetation index,
+                                phenological curves, and weather anomalies from Sentinel-2 and Landsat. i2Check reads
+                                land use and environmental compliance against public territorial layers. These are
+                                systems I build and operate.
                             </li>
-                            <li>
-                                <b>Do diagnóstico à operação:</b> desenho e conduzo soluções sob medida de
-                                monitoramento agrícola, risco ambiental e conformidade, com entrega ponta a ponta.
+                            <li data-i18n-html="experience.i2geo.b2">
+                                <b>For whom, and by what method:</b> banks, insurers, and agribusiness companies. The
+                                method is satellite time series and computer vision, including the center-pivot model I
+                                published as first author (Remote Sensing, 2020, 99% precision) and land-use models with
+                                accuracy above 90% at national scale.
                             </li>
-                            <li>
-                                <b>Risco mensurável:</b> modelos de visão computacional e séries temporais
-                                aplicados a crédito, sinistro, valoração de imóveis e ESG.
+                            <li data-i18n-html="experience.i2geo.b3">
+                                <b>What the operation delivers:</b> evidence of planting, crop development, harvest,
+                                and land-use exposure for credit, insurance claims, property valuation, and ESG,
+                                without a field visit on every file.
                             </li>
                         </ul>
                     </div>
-                    <div class="card-action"><span>Out 2025 - Atualmente</span></div>
+                    <div class="card-action"><span data-i18n="experience.i2geo.dates">Oct 2025 - Present</span></div>
                 </div>
 
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
                             <div class="col s12 m2">
-                                <img src="static/img/serasa_experian.png" class="responsive-img center-block">
+                                <img src="static/img/serasa_experian.png" class="responsive-img center-block"
+                                    alt="Serasa Experian">
                             </div>
                             <div class="col s12 m10">
                                 <p>
                                     <span class="card-title">
                                         <a href="https://www.serasaexperian.com.br/solucoes/agro" target="_blank"
-                                            class="hoverline">
-                                            Serasa Experian (aquisição da Brain Agriculture em 03/2025)
+                                            class="hoverline" data-i18n="experience.serasa.company">
+                                            Serasa Experian (acquired Brain Agriculture in March 2025)
                                         </a>
                                     </span>
                                 </p>
-                                <div class="">Consultor de Soluções — Líder Técnico (Abr 2025 - Set 2025)
+                                <div data-i18n="experience.serasa.role">Solutions Consultant — Technical Lead (Apr 2025
+                                    - Sep 2025)
                                 </div>
                             </div>
                         </div>
-                        <p>Após a aquisição da Brain Agriculture, segui à frente das soluções agroambientais
-                            na Serasa Experian, alinhando produto, time e operação à carteira de crédito rural
-                            da companhia.</p>
+                        <p data-i18n="experience.serasa.summary">After the acquisition of Brain Agriculture, I continued
+                            to lead the agro-environmental solutions at Serasa Experian, aligning product, team, and
+                            operations with the company's rural-credit portfolio.</p>
                         <ul>
-                            <li>
-                                <b>Continuidade de P&amp;L de produto:</b> mantive Crop Monitor, Relatório de
-                                Desmatamento, Valoração de Imóveis, Laudo de Sinistro e Análise Histórica de
-                                Imóveis Rurais como oferta comercial para bancos, cooperativas e seguradoras.
+                            <li data-i18n-html="experience.serasa.b1">
+                                <b>Product P&amp;L continuity:</b> I kept Crop Monitor, the Deforestation Report,
+                                Property Valuation, the Loss Assessment Report, and Historical Analysis of Rural
+                                Properties as a commercial offering for banks, cooperatives, and insurers.
                             </li>
-                            <li>
-                                <b>Liderança na integração:</b> gerenciei 14 pessoas (4 desenvolvedores e 10
-                                analistas de geoprocessamento) e traduzi expectativa corporativa em entrega
-                                com qualidade de dado.
+                            <li data-i18n-html="experience.serasa.b2">
+                                <b>The same team through the integration:</b> the one team of 14 I had built at Brain
+                                (4 developers and 10 geoprocessing analysts) moved with the acquisition, Brain → Serasa.
+                                I kept that team delivering with data quality.
                             </li>
-                            <li>
-                                <b>Decisão de crédito e risco:</b> o Crop Monitor acompanha o ciclo produtivo
-                                com satélite e clima para reduzir visita a campo, antecipar quebra e mitigar
-                                fraude em operações rurais.
+                            <li data-i18n-html="experience.serasa.b3">
+                                <b>Credit and risk decisions:</b> Crop Monitor follows the production cycle with
+                                satellite and weather data to reduce field visits, anticipate crop failure, and mitigate
+                                fraud in rural operations.
                             </li>
                         </ul>
                     </div>
-                    <div class="card-action"><span>Abr 2025 - Set 2025 | Remoto</span></div>
+                    <div class="card-action"><span data-i18n="experience.serasa.dates">Apr 2025 - Sep 2025 |
+                            Remote</span></div>
                 </div>
 
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
                             <div class="col s12 m2">
-                                <img src="static/img/brain_agriculture.jpg" class="responsive-img center-block">
+                                <img src="static/img/brain_agriculture.jpg" class="responsive-img center-block"
+                                    alt="Brain Agriculture">
                             </div>
                             <div class="col s12 m10">
                                 <p>
@@ -432,41 +476,45 @@
                                         </a>
                                     </span>
                                 </p>
-                                <div class="">Consultor de Soluções — Líder Técnico (Jul 2022 - Mar 2025)
+                                <div data-i18n="experience.brain.roleLead">Solutions Consultant — Technical Lead (Jul
+                                    2022 - Mar 2025)
                                 </div>
-                                <div class="">Analista de Desenvolvimento de Software Sênior (Out 2021 -
-                                    Jun 2022)</div>
+                                <div data-i18n="experience.brain.roleSenior">Senior Software Development Analyst (Oct
+                                    2021 - Jun 2022)</div>
                             </div>
                         </div>
-                        <p>Construí a linha de produtos agroambientais da Brain — da hipótese ao produto
-                            em produção na Serasa Experian. Cresci de liderança técnica para PM/PO com
-                            mandato de time e de entrega.</p>
+                        <p data-i18n="experience.brain.summary">I built Brain's agro-environmental product line, from
+                            the hypothesis to the product running in production at Serasa Experian. I grew from
+                            technical leadership into a PM/PO role with a mandate over the team and delivery.</p>
                         <ul>
-                            <li>
-                                <b>Crop Monitor:</b> liderei a criação e a implantação do produto de
-                                monitoramento de lavouras com satélite, clima e IA, hoje oferta da
-                                Serasa Experian para carteiras de crédito rural.
+                            <li data-i18n-html="experience.brain.b1">
+                                <b>Crop Monitor:</b> I led the creation and rollout of the crop-monitoring product using
+                                satellite imagery, weather, and AI, now a Serasa Experian offering for rural-credit
+                                portfolios.
                             </li>
-                            <li>
-                                <b>Portfólio de decisão:</b> conduzi Relatório de Desmatamento, Valoração
-                                de Imóveis, Laudo de Sinistro e Análise Histórica de Imóveis Rurais —
-                                problemas de risco, ESG e precificação, não apenas software.
+                            <li data-i18n-html="experience.brain.b2">
+                                <b>Decision portfolio:</b> I led the Deforestation Report, Property Valuation, the Loss
+                                Assessment Report, and Historical Analysis of Rural Properties — problems of risk, ESG,
+                                and pricing, delivered as software.
                             </li>
-                            <li>
-                                <b>Time e escala:</b> formei e liderei equipe multidisciplinar de 14
-                                pessoas e defini a arquitetura capaz de ingerir imagens em massa,
-                                classificar com IA e entregar resultado no ritmo do cliente.
+                            <li data-i18n-html="experience.brain.b3">
+                                <b>One team, later Serasa:</b> I built and led a single multidisciplinary team of 14
+                                (4 developers and 10 geoprocessing analysts) and defined an architecture that can ingest
+                                imagery at volume, classify it with AI, and return results at the client's pace. That
+                                same team continued at Serasa Experian after the acquisition.
                             </li>
                         </ul>
                     </div>
-                    <div class="card-action"><span>Out 2021 - Mar 2025 | Remoto</span></div>
+                    <div class="card-action"><span data-i18n="experience.brain.dates">Oct 2021 - Mar 2025 |
+                            Remote</span></div>
                 </div>
 
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
                             <div class="col s12 m2">
-                                <img src="static/img/agrosatelite.png" class="responsive-img center-block">
+                                <img src="static/img/agrosatelite.png" class="responsive-img center-block"
+                                    alt="Agrosatélite">
                             </div>
                             <div class="col s12 m10">
                                 <p>
@@ -474,36 +522,36 @@
                                         <a href="https://agrosatelite.com.br" target="_blank"
                                             class="hoverline">Agrosatélite Geotecnologia Aplicada Ltda.</a></span>
                                 </p>
-                                <div class="">Analista de Desenvolvimento de Software Sênior (Out 2019 -
-                                    Set/2021)</div>
-                                <div class="">Analista de Desenvolvimento de Software Pleno (Mai 2018 -
-                                    Set/2019)</div>
-                                <div class="">Analista de Desenvolvimento de Software Trainee (Ago 2017 -
-                                    Abr/2018)</div>
+                                <div data-i18n="experience.agro.roleSenior">Senior Software Development Analyst (Oct
+                                    2019 - Sep 2021)</div>
+                                <div data-i18n="experience.agro.roleMid">Mid-Level Software Development Analyst (May
+                                    2018 - Sep 2019)</div>
+                                <div data-i18n="experience.agro.roleTrainee">Software Development Analyst, Trainee (Aug
+                                    2017 - Apr 2018)</div>
                             </div>
                         </div>
-                        <p>Participei de projetos de alcance nacional e internacional (MapBiomas, UNFCCC,
-                            NexGenMap) que saíram do paper e viraram dado usado por governo, bancos e
-                            empresas do agro.</p>
+                        <p data-i18n="experience.agro.summary">I took part in projects of national and international
+                            scope (MapBiomas, UNFCCC, NexGenMap) that left the paper and became data used by government,
+                            banks, and agribusiness companies.</p>
                         <ul>
-                            <li>
-                                <b>SIMFaz 2.0:</b> liderança técnica da plataforma de monitoramento de
-                                fazendas para risco ambiental, social e financeiro — usada por bancos,
-                                seguradoras e agro na avaliação fundiária e no crédito.
+                            <li data-i18n-html="experience.agro.b1">
+                                <b>SIMFaz 2.0:</b> technical leadership of the farm-monitoring platform for
+                                environmental, social, and financial risk — used by banks, insurers, and agribusiness in
+                                land appraisal and credit.
                             </li>
-                            <li>
-                                <b>Rastreabilidade da soja (COAMO):</b> desenhei e entreguei o portal
-                                ponta a ponta, da origem da soja ao critério de sustentabilidade e
-                                compliance de mercado.
+                            <li data-i18n-html="experience.agro.b2">
+                                <b>Soy traceability (COAMO):</b> I designed and delivered the portal end to end, from
+                                the origin of the soy to market sustainability and compliance criteria.
                             </li>
-                            <li>
-                                <b>Infraestrutura de território:</b> modelos de deep learning com 99%
-                                de precisão para pivôs centrais (base do mapeamento de irrigação do
-                                MapBiomas) e séries de uso da terra 1985–2018 com exatidão acima de 91%.
+                            <li data-i18n-html="experience.agro.b3">
+                                <b>Territorial infrastructure:</b> deep-learning models with 99% precision for center
+                                pivots (the basis of MapBiomas irrigation mapping) and land-use series for 1985–2018
+                                with accuracy above 91%.
                             </li>
                         </ul>
                     </div>
-                    <div class="card-action"><span>Ago 2017 - Set 2021 | Florianópolis-SC, Brasil</span></div>
+                    <div class="card-action"><span data-i18n="experience.agro.dates">Aug 2017 - Sep 2021 |
+                            Florianópolis, SC, Brazil</span></div>
                 </div>
 
             </div>
@@ -511,7 +559,7 @@
 
 
         <section id="projects" class="section scrollspy">
-            <h3 class="page-title">Resultados e entregas</h3>
+            <h3 class="page-title" data-i18n="projects.title">Results and deliverables</h3>
             <div class="container-fluid">
                 <div class="row">
 
@@ -519,174 +567,74 @@
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem do sistema Crop Monitor"
+                                <img data-i18n-attr="alt:projects.crop.alt" alt="Crop Monitor product screen"
                                     src="static/img/serasa-experian-crop-monitor.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">Crop Monitor<i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p>Produto da Serasa Experian para bancos, cooperativas e seguradoras
-                                    acompanharem o ciclo da lavoura e o risco da carteira rural.</p>
+                                <span class="card-title activator hoverline"><span data-i18n="projects.crop.title">Crop
+                                        Monitor</span><i class="mdi-navigation-more-vert right"></i></span>
+                                <p data-i18n="projects.crop.summary">A Serasa Experian product for banks, cooperatives,
+                                    and insurers to follow the crop cycle and the risk in a rural portfolio.</p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Liderei o Crop Monitor da hipótese ao produto comercial. O sistema
-                                    cruza satélite, clima e IA para alertar emergência, cultura, proximidade
-                                    de colheita e início da colheita — reduzindo visita a campo, antecipando
-                                    quebra e mitigando fraude. Atuei como líder técnico, PM e PO, com
-                                    gestão do time e da qualidade do dado em escala.
+                                <p data-i18n="projects.crop.body">
+                                    I led Crop Monitor from the hypothesis to the commercial product. The system
+                                    combines satellite imagery, weather, and AI to flag emergence, crop type, harvest
+                                    proximity, and harvest start — reducing field visits, anticipating crop failure, and
+                                    mitigating fraud. I worked as technical lead, PM, and PO, managing the team and data
+                                    quality at scale.
                                 </p>
                                 <div class="card-action">
                                     <a href="https://www.serasaexperian.com.br/solucoes/crop-monitor/" target="_blank"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped"
-                                        data-position="top" data-tooltip="Ver online">
+                                        data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.crop.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="View Crop Monitor online">
                                         <i class="fa fa-external-link"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Análise Geoespacial das Enchentes no Sul do Brasil -->
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem da análise geoespacial das enchentes"
-                                    src="static/img/Geospatial Analysis of Flood Impacts in Southern Brazil – 2024.jpg"
-                                    class="activator">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator  hoverline">Análise Geoespacial das Enchentes
-                                    no Sul do Brasil – 2024<i class="mdi-navigation-more-vert right"></i></span>
-                                <p>Estimativa de áreas inundadas e perdas agrícolas para decisão em
-                                    contexto de emergência.</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Conduzi a análise das enchentes de 2024 nas bacias do Jacuí e Guaíba,
-                                    cruzando satélite, mapas temáticos e dados oficiais. O resultado deu
-                                    número a lavouras e estruturas de armazenamento afetadas — insumo
-                                    para diagnóstico rápido de perda, seguro e resposta pública.
-                                </p>
-                                <div class="card-action">
-                                    <a href="static/publications/Impacto das inundações nas lavouras e estruturas de armazenamento do RS.pdf"
-                                        target="_blank"
-                                        class="btn-floating btn-large waves-effect waves-light emerald tooltipped"
-                                        data-position="top" data-tooltip="Ver online">
-                                        <i class="fa fa-external-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Identificação Automática de Pivôs Centrais de Irrigaçã -->
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem da Identificação Automática de Pivôs Centrais de Irrigação"
-                                    src="static/img/automatic_detection_center_pivot_irrigation_systems.jpg"
-                                    class="activator">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator  hoverline">Identificação Automática de Pivôs
-                                    Centrais de Irrigação<i class="mdi-navigation-more-vert right"></i></span>
-                                <p>Método de mapeamento nacional de irrigação, com 99% de precisão,
-                                    adotado como referência no MapBiomas.</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Publiquei como primeiro autor o método de detecção automática de pivôs
-                                    centrais (Remote Sensing, 2020): 99% de precisão, 88% de recall, mais de
-                                    42 mil imagens PlanetScope. O trabalho passou a ser citado como base do
-                                    mapeamento de irrigação do MapBiomas e de estudos de demanda hídrica
-                                    — da política pública brasileira à Bacia do Zambeze.
-                                </p>
-                                <div class="card-action">
-                                    <a href="https://github.com/saraivaufc/instance-segmentation-maskrcnn"
-                                        target="_blank"
-                                        class="btn-floating btn-large waves-effect waves-light emerald tooltipped"
-                                        data-position="top" data-tooltip="Ver online">
-                                        <i class="fa fa-external-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quarta Comunicação Nacional do Brasil à UNFCCC -->
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Captura de tela do site do MapBiomas"
-                                    src="static/img/Fourth National Communication of Brazil to the UNFCCC.png"
-                                    class="activator">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator  hoverline">Quarta Comunicação Nacional do
-                                    Brasil à UNFCCC<i class="mdi-navigation-more-vert right"></i></span>
-                                <p>Inventário oficial de GEE do setor de uso da terra do Brasil
-                                    junto à Convenção do Clima da ONU.</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Conduzi o processamento de imagens de satélite que alimentou as
-                                    matrizes de emissões e remoções de GEE do setor de uso da terra
-                                    (1994, 2002, 2005, 2010 e 2016), usadas no Capítulo 2 da 4ª
-                                    Comunicação Nacional do Brasil à UNFCCC — o relatório oficial
-                                    do país sobre clima.
-                                </p>
-                                <div class="card-action">
-                                    <a aria-label="Visitar o site da UNFCCC"
-                                        href="https://unfccc.int/documents/267657?gclid=Cj0KCQiAhomtBhDgARIsABcaYymne4ZMzlhMQjiCsqwCvtRyu78yNHf7HxUKuj9aTum8yCghHm0W0pUaAolXEALw_wcB"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
-                                        class="btn-floating btn-large waves-effect waves-light emerald tooltipped"><i
-                                            class="fa fa-external-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <!-- MapBiomas -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Captura de tela do site do MapBiomas" src="static/img/mapbiomas.jpg"
-                                    class="activator">
+                                <img data-i18n-attr="alt:projects.mapbiomas.alt" alt="MapBiomas website"
+                                    src="static/img/mapbiomas.jpg" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">MapBiomas<i
+                                <span class="card-title activator hoverline"><span
+                                        data-i18n="projects.mapbiomas.title">MapBiomas</span><i
                                         class="mdi-navigation-more-vert right"></i></span>
-                                <p>Série anual de uso da terra do Brasil, hoje infraestrutura de
-                                    dado para política, crédito e pesquisa.</p>
+                                <p data-i18n="projects.mapbiomas.summary">Brazil's annual land-use series, now data
+                                    infrastructure for policy, credit, and research.</p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Entre 2017 e 2021, mapeei agricultura e florestas plantadas em todo
-                                    o território brasileiro com Landsat desde 1984. O artigo da rede
-                                    MapBiomas em Remote Sensing (2020) soma mais de 1.800 citações. O
-                                    dado saiu do laboratório e passou a orientar monitoramento ambiental,
-                                    crédito rural e gestão do território.
+                                <p data-i18n="projects.mapbiomas.body">
+                                    From 2017 to 2021, I mapped agriculture and planted forests across Brazil with
+                                    Landsat imagery from 1984 onward. I am a coauthor, not the first author, of the
+                                    MapBiomas network paper in Remote Sensing (2020, Souza Jr. et al.). Its roughly
+                                    1,800 citations measure adoption of that infrastructure, not a personal citation
+                                    count. The data left the lab and now guides environmental monitoring, rural credit,
+                                    and territorial management.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Visitar o site do MapBiomas" href="http://mapbiomas.org"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
+                                    <a href="http://mapbiomas.org" target="_blank" data-position="top"
+                                        data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.mapbiomas.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Visit the MapBiomas website"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped"><i
                                             class="fa fa-external-link"></i></a>
-                                    <a aria-label="Visitar o repositório do projeto MapBiomas no GitHub"
-                                        href="https://github.com/saraivaufc/mapbiomas" target="_blank"
-                                        data-position="top" data-tooltip="Ver código"
+                                    <a href="https://github.com/saraivaufc/mapbiomas" target="_blank"
+                                        data-position="top" data-tooltip="View code"
+                                        data-i18n-attr="aria-label:projects.mapbiomas.codeAria|data-tooltip:projects.viewCode"
+                                        aria-label="Open the MapBiomas project repository on GitHub"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped"><i
                                             class="fa fa-github"></i></a>
                                 </div>
@@ -694,38 +642,81 @@
                         </div>
                     </div>
 
+
+                    <!-- Fourth National Communication -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img data-i18n-attr="alt:projects.unfccc.alt"
+                                    alt="Cover of Brazil's Fourth National Communication to the UNFCCC"
+                                    src="static/img/Fourth National Communication of Brazil to the UNFCCC.png"
+                                    class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator hoverline"><span
+                                        data-i18n="projects.unfccc.title">Brazil's Fourth National Communication to the
+                                        UNFCCC</span><i class="mdi-navigation-more-vert right"></i></span>
+                                <p data-i18n="projects.unfccc.summary">Brazil's official greenhouse-gas inventory for
+                                    the land-use sector, submitted to the UN Climate Convention.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
+                                        class="mdi-navigation-close right"></i></span>
+                                <p data-i18n="projects.unfccc.body">
+                                    I led the satellite-image processing that fed the greenhouse-gas emission and
+                                    removal matrices for the land-use sector (1994, 2002, 2005, 2010, and 2016), used in
+                                    Chapter 2 of Brazil's Fourth National Communication to the UNFCCC — the country's
+                                    official climate report.
+                                </p>
+                                <div class="card-action">
+                                    <a href="https://unfccc.int/documents/267657?gclid=Cj0KCQiAhomtBhDgARIsABcaYymne4ZMzlhMQjiCsqwCvtRyu78yNHf7HxUKuj9aTum8yCghHm0W0pUaAolXEALw_wcB"
+                                        target="_blank" data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.unfccc.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Open the UNFCCC document"
+                                        class="btn-floating btn-large waves-effect waves-light emerald tooltipped"><i
+                                            class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <!-- NexGenMap -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light"><img alt="Code Island logo"
+                            <div class="card-image waves-effect waves-block waves-light"><img
+                                    data-i18n-attr="alt:projects.nexgen.alt" alt="NextGenMap"
                                     src="static/img/nexgenmap.png" class="activator"></div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">
-                                    NextGenMap<i class="mdi-navigation-more-vert right"></i>
+                                <span class="card-title activator hoverline">
+                                    <span data-i18n="projects.nexgen.title">NextGenMap</span><i
+                                        class="mdi-navigation-more-vert right"></i>
                                 </span>
-                                <p>
-                                    Parceria Planet, MapBiomas, Google e Fundação Moore para a
-                                    nova geração de monitoramento de florestas tropicais.
+                                <p data-i18n="projects.nexgen.summary">
+                                    A partnership of Planet, MapBiomas, Google, and the Moore Foundation for the next
+                                    generation of tropical-forest monitoring.
                                 </p>
                             </div>
-                            <div class="card-reveal"><span class="card-title ">Impacto<i
+                            <div class="card-reveal"><span class="card-title"><span
+                                        data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Liderei o mapeamento de pivôs de irrigação e infraestrutura urbana
-                                    no NexGenMap. A iniciativa antecipou o método que o MapBiomas
-                                    adotou para irrigação e apoiou detecção de desmatamento e mudança
-                                    de uso da terra com imagem diária de alta resolução — insumo para
-                                    política de conservação.
+                                <p data-i18n="projects.nexgen.body">
+                                    I led the mapping of irrigation pivots and urban infrastructure in NexGenMap. The
+                                    initiative produced the method MapBiomas later adopted for irrigation, and it
+                                    supported detection of deforestation and land-use change with daily high-resolution
+                                    imagery — input for conservation policy.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Visitar o site do NexGenMap"
-                                        href="https://medium.com/planet-stories/a-turning-point-in-tropical-forest-monitoring-f7b693f69417"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
+                                    <a href="https://medium.com/planet-stories/a-turning-point-in-tropical-forest-monitoring-f7b693f69417"
+                                        target="_blank" data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.nexgen.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Read the NextGenMap article"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
-                                    <a aria-label="Visitar o repositório do NexGenMap no GitHub"
-                                        href="https://github.com/NexGenMap" target="_blank" data-position="top"
-                                        data-tooltip="Ver código"
+                                    <a href="https://github.com/NexGenMap" target="_blank" data-position="top"
+                                        data-tooltip="View code"
+                                        data-i18n-attr="aria-label:projects.nexgen.codeAria|data-tooltip:projects.viewCode"
+                                        aria-label="Open the NexGenMap repository on GitHub"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-github"></i></a>
                                 </div>
@@ -733,35 +724,76 @@
                         </div>
                     </div>
 
+                    <!-- Center pivots -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img data-i18n-attr="alt:projects.pivots.alt"
+                                    alt="Automatic detection of center-pivot irrigation systems"
+                                    src="static/img/automatic_detection_center_pivot_irrigation_systems.jpg"
+                                    class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator hoverline"><span
+                                        data-i18n="projects.pivots.title">Automatic Detection of Center-Pivot Irrigation
+                                        Systems</span><i class="mdi-navigation-more-vert right"></i></span>
+                                <p data-i18n="projects.pivots.summary">A national irrigation-mapping method, with 99%
+                                    precision, adopted as a reference by MapBiomas.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
+                                        class="mdi-navigation-close right"></i></span>
+                                <p data-i18n="projects.pivots.body">
+                                    I published, as first author, the method for automatic detection of center-pivot
+                                    irrigation systems (Remote Sensing, 2020): 99% precision, 88% recall, and more than
+                                    42,000 PlanetScope images. The work is cited as the basis for MapBiomas irrigation
+                                    mapping and for water-demand studies, from Brazilian public policy to the Zambezi
+                                    River Basin.
+                                </p>
+                                <div class="card-action">
+                                    <a href="https://github.com/saraivaufc/instance-segmentation-maskrcnn"
+                                        target="_blank"
+                                        class="btn-floating btn-large waves-effect waves-light emerald tooltipped"
+                                        data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.pivots.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="View the center-pivot detection code">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- SIMFaz -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem do SIMFaz" src="static/img/simfaz.png" class="activator">
+                                <img data-i18n-attr="alt:projects.simfaz.alt" alt="SIMFaz platform"
+                                    src="static/img/simfaz.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">SIMFaz
+                                <span class="card-title activator hoverline"><span
+                                        data-i18n="projects.simfaz.title">SIMFaz</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
-                                <p>
-                                    Inteligência geográfica para crédito, seguro e avaliação de
-                                    imóveis rurais.
+                                <p data-i18n="projects.simfaz.summary">
+                                    Geographic intelligence for credit, insurance, and appraisal of rural properties.
                                 </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Como líder técnico, conduzi o SIMFaz 2.0: três módulos —
-                                    Socioambiental, Avaliação Fundiária e Monitoramento Agrícola —
-                                    para bancos, seguradoras e empresas do agro decidirem risco,
-                                    valor e conformidade de imóveis rurais com satélite e clima,
-                                    no tempo da operação.
+                                <p data-i18n="projects.simfaz.body">
+                                    As technical lead, I delivered SIMFaz 2.0: three modules — Environmental and Social,
+                                    Land Appraisal, and Agricultural Monitoring — so banks, insurers, and agribusiness
+                                    companies can decide risk, value, and compliance of rural properties with satellite
+                                    and weather data, on the timeline of the operation.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Visitar o site do SIMFaz" href="https://simfaz.agrosatelite.com.br/"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
+                                    <a href="https://simfaz.agrosatelite.com.br/" target="_blank" data-position="top"
+                                        data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.simfaz.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Visit the SIMFaz website"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
                                 </div>
@@ -770,36 +802,35 @@
                     </div>
 
 
-                    <!-- Portal da Rastreabilidade -->
+                    <!-- COAMO traceability -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem do Portal da Rastreabilidade" src="static/img/rastreabilidade.png"
-                                    class="activator">
+                                <img data-i18n-attr="alt:projects.coamo.alt" alt="COAMO soy traceability portal"
+                                    src="static/img/rastreabilidade.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">Portal de Rastreabilidade da Soja
-                                    - COAMO
+                                <span class="card-title activator hoverline"><span data-i18n="projects.coamo.title">Soy
+                                        Traceability Portal — COAMO</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
-                                <p>
-                                    Origem da soja rastreada para sustentabilidade e compliance
-                                    de mercado.
+                                <p data-i18n="projects.coamo.summary">
+                                    Traced soy origin for sustainability and market compliance.
                                 </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Entreguei o portal da COAMO do zero: bases integradas, modelo
-                                    de identificação de soja e plataforma web. A cooperativa passou
-                                    a rastrear a origem do grão com critério de sustentabilidade —
-                                    da fazenda ao mercado.
+                                <p data-i18n="projects.coamo.body">
+                                    I delivered the COAMO portal from scratch: integrated databases, a
+                                    soy-identification model, and a web platform. The cooperative can trace the origin
+                                    of the grain against sustainability criteria, from the farm to the market.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Visitar o Portal da Rastreabilidade da COAMO"
-                                        href="https://trace.coamo.com.br" target="_blank" data-position="top"
-                                        data-tooltip="Ver online"
+                                    <a href="https://trace.coamo.com.br" target="_blank" data-position="top"
+                                        data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.coamo.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Visit the COAMO traceability portal"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
                                 </div>
@@ -808,32 +839,33 @@
                     </div>
 
 
-                    <!-- Cana-de-açúcar -->
+                    <!-- Sugarcane -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem do levantamento de cana-de-açúcar"
+                                <img data-i18n-attr="alt:projects.sugarcane.alt" alt="Irrigated sugarcane survey"
                                     src="static/img/levantamento_cana_de_acucar_irrigada.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">
-                                    Levantamento de irrigação e fertirrigação da cana-de-açúcar no Brasil
+                                <span class="card-title activator hoverline">
+                                    <span data-i18n="projects.sugarcane.title">Survey of irrigation and fertigation in
+                                        Brazilian sugarcane</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Implementei a metodologia de identificação de áreas irrigadas e
-                                    fertirrigadas de cana no Brasil. O mapeamento inédito virou
-                                    referência para o setor sucroenergético e para a gestão de
-                                    recurso hídrico na cadeia.
+                                <p data-i18n="projects.sugarcane.body">
+                                    I implemented the method for identifying irrigated and fertigated sugarcane areas in
+                                    Brazil. This first-of-its-kind map became a reference for the sugar-energy sector
+                                    and for water-resource management in the supply chain.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Ver publicação do levantamento da cana-de-açúcar"
-                                        href="static/publications/LEVANTAMENTO_CANA_DE_ACUCAR_IRRIGADA_FERTIRRIGADA_BRASIL.pdf"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
+                                    <a href="static/publications/LEVANTAMENTO_CANA_DE_ACUCAR_IRRIGADA_FERTIRRIGADA_BRASIL.pdf"
+                                        target="_blank" data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.sugarcane.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="View the sugarcane irrigation survey"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
                                 </div>
@@ -843,30 +875,33 @@
 
 
 
-                    <!--Estimativas de Evapotranspiração Real por Sensoriamento Remoto no Brasil -->
+                    <!-- SSEBop estimates -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem de evapotranspiração" src="static/img/ssebop.png" class="activator">
+                                <img data-i18n-attr="alt:projects.ssebop.alt" alt="Actual evapotranspiration map"
+                                    src="static/img/ssebop.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">
-                                    Estimativas de Evapotranspiração Real por Sensoriamento Remoto no Brasil
+                                <span class="card-title activator hoverline">
+                                    <span data-i18n="projects.ssebop.title">Actual Evapotranspiration Estimates from
+                                        Remote Sensing in Brazil</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Levei o modelo SSEBop ao território nacional no Google Earth Engine,
-                                    com adaptação local e validação. O resultado é monitoramento hídrico
-                                    em escala de país — dado para gestão de água, irrigação e política.
+                                <p data-i18n="projects.ssebop.body">
+                                    I brought the SSEBop model to the national territory on Google Earth Engine, with
+                                    local adaptation and validation. The result is country-scale water monitoring — data
+                                    for water management, irrigation, and policy.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Ver publicação do SSEBop"
-                                        href="static/publications/ESTIMATIVAS_DE_EVAPOTRANSPIRACAO_REAL_POR_SENSORIAMENTO_REMOTO.pdf"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
+                                    <a href="static/publications/ESTIMATIVAS_DE_EVAPOTRANSPIRACAO_REAL_POR_SENSORIAMENTO_REMOTO.pdf"
+                                        target="_blank" data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.ssebop.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="View the SSEBop publication"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
                                 </div>
@@ -874,31 +909,32 @@
                         </div>
                     </div>
 
-                    <!-- Polos de Irrigação -->
+                    <!-- Irrigation hubs -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Capa da publicação sobre polos de irrigação"
+                                <img data-i18n-attr="alt:projects.poles.alt"
+                                    alt="Cover of the irrigated-agriculture hubs publication"
                                     src="static/img/polos_irrigacao.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">
-                                    Polos nacionais de agricultura irrigada
+                                <span class="card-title activator hoverline">
+                                    <span data-i18n="projects.poles.title">National hubs of irrigated agriculture</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Implementei a metodologia que identificou os principais polos de
-                                    irrigação do Brasil. O mapa passou a subsidiar política pública e
-                                    gestão estratégica de água — não só um exercício de classificação.
+                                <p data-i18n="projects.poles.body">
+                                    I implemented the method that identified Brazil's main irrigation hubs. The map now
+                                    supports public policy and strategic water management.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Ver publicação"
-                                        href="static/publications/Polos nacionais de agricultura irrigada_ mapeamento de áreas irrigadas com imagens de satélite.pdf"
-                                        target="_blank" data-position="top" data-tooltip="Ver online"
+                                    <a href="static/publications/Polos nacionais de agricultura irrigada_ mapeamento de áreas irrigadas com imagens de satélite.pdf"
+                                        target="_blank" data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.poles.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="View the irrigated-agriculture hubs publication"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i>
                                     </a>
@@ -907,36 +943,76 @@
                         </div>
                     </div>
 
-
-                    <!-- Aplicativo SSEBop -->
+                    <!-- Flood analysis -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem do Aplicativo SSEBop" src="static/img/ssebop_app.png"
+                                <img data-i18n-attr="alt:projects.floods.alt"
+                                    alt="Geospatial analysis of the 2024 floods in southern Brazil"
+                                    src="static/img/Geospatial Analysis of Flood Impacts in Southern Brazil – 2024.jpg"
                                     class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">
-                                    Aplicativo SSEBop
+                                <span class="card-title activator hoverline"><span
+                                        data-i18n="projects.floods.title">Geospatial Analysis of Flood Impacts in
+                                        Southern Brazil, 2024</span><i
+                                        class="mdi-navigation-more-vert right"></i></span>
+                                <p data-i18n="projects.floods.summary">An estimate of flooded area and agricultural
+                                    losses for decisions in an emergency.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
+                                        class="mdi-navigation-close right"></i></span>
+                                <p data-i18n="projects.floods.body">
+                                    I led the analysis of the 2024 floods in the Jacuí and Guaíba basins, combining
+                                    satellite imagery, thematic maps, and official data. The result quantified affected
+                                    crops and storage structures — input for rapid loss assessment, insurance, and
+                                    public response.
+                                </p>
+                                <div class="card-action">
+                                    <a href="static/publications/Impacto das inundações nas lavouras e estruturas de armazenamento do RS.pdf"
+                                        target="_blank"
+                                        class="btn-floating btn-large waves-effect waves-light emerald tooltipped"
+                                        data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.floods.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="View the flood impact report">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SSEBop app -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img data-i18n-attr="alt:projects.ssebopApp.alt" alt="SSEBop application"
+                                    src="static/img/ssebop_app.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator hoverline">
+                                    <span data-i18n="projects.ssebopApp.title">SSEBop Application</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
-                                <p>
-                                    Ferramenta da Agência Nacional de Águas para estimar
-                                    evapotranspiração real no Brasil.
+                                <p data-i18n="projects.ssebopApp.summary">
+                                    A National Water and Sanitation Agency (ANA) tool for estimating actual
+                                    evapotranspiration in Brazil.
                                 </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Entreguei à ANA um aplicativo operacional de evapotranspiração
-                                    real em escala nacional. O dado saiu do paper e entrou na rotina
-                                    de quem gestiona água no país.
+                                <p data-i18n="projects.ssebopApp.body">
+                                    I delivered to ANA, Brazil's National Water and Sanitation Agency, an operational
+                                    application for actual evapotranspiration at national scale. The data left the paper
+                                    and entered the routine of the people who manage water in the country.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Visitar o aplicativo SSEBop"
-                                        href="https://ssebop.users.earthengine.app/view/ssebop-v101" target="_blank"
-                                        data-position="top" data-tooltip="Ver online"
+                                    <a href="https://ssebop.users.earthengine.app/view/ssebop-v101" target="_blank"
+                                        data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.ssebopApp.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Open the SSEBop application"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
                                 </div>
@@ -948,29 +1024,31 @@
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="Imagem do Alertas" src="static/img/alertas.png" class="activator">
+                                <img data-i18n-attr="alt:projects.alerts.alt" alt="Alertas deforestation application"
+                                    src="static/img/alertas.png" class="activator">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator  hoverline">Aplicativo Alertas
+                                <span class="card-title activator hoverline"><span
+                                        data-i18n="projects.alerts.title">Alertas Application</span>
                                     <i class="mdi-navigation-more-vert right"></i>
                                 </span>
-                                <p>
-                                    Visualização operacional de alertas de desmatamento do INPE
-                                    para fiscalização e conservação.
+                                <p data-i18n="projects.alerts.summary">
+                                    An operational view of INPE deforestation alerts for enforcement and conservation.
                                 </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title ">Impacto<i
+                                <span class="card-title"><span data-i18n="projects.impact">Impact</span><i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>
-                                    Integrei imagens de satélite e alertas do INPE em um aplicativo
-                                    de monitoramento quase em tempo real. O objetivo: tirar o alerta
-                                    da planilha e colocar na tela de quem fiscaliza.
+                                <p data-i18n="projects.alerts.body">
+                                    I integrated satellite imagery and INPE alerts into a near-real-time monitoring
+                                    application, so the alert leaves the spreadsheet and reaches the screen of the
+                                    people doing enforcement.
                                 </p>
                                 <div class="card-action">
-                                    <a aria-label="Visitar o aplicativo Alertas"
-                                        href="https://saraiva.users.earthengine.app/view/alertas" target="_blank"
-                                        data-position="top" data-tooltip="Ver online"
+                                    <a href="https://saraiva.users.earthengine.app/view/alertas" target="_blank"
+                                        data-position="top" data-tooltip="View online"
+                                        data-i18n-attr="aria-label:projects.alerts.aria|data-tooltip:projects.viewOnline"
+                                        aria-label="Open the Alertas application"
                                         class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                         <i class="fa fa-external-link"></i></a>
                                 </div>
@@ -984,55 +1062,55 @@
         </section>
 
         <section id="habilidades" class="section scrollspy">
-            <h3 class="page-title">Como atuo</h3>
+            <h3 class="page-title" data-i18n="skills.title">How I work</h3>
             <div class="container">
                 <div class="capability-grid">
                     <div class="card">
                         <div class="card-content">
-                            <p class="impact-label">Produto</p>
-                            <h4>PM e PO de soluções agroambientais</h4>
-                            <p>
-                                Recorto o problema de negócio, priorizo o que muda a decisão do
-                                cliente e conduzo o roadmap até o produto em produção.
+                            <p class="impact-label" data-i18n="skills.productLabel">Product</p>
+                            <h4 data-i18n="skills.productTitle">PM and PO for agro-environmental solutions</h4>
+                            <p data-i18n="skills.productBody">
+                                I frame the business problem, prioritize what changes the client's decision, and carry
+                                the roadmap through to the product in production.
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <p class="impact-label">Pessoas</p>
-                            <h4>Liderança de times multidisciplinares</h4>
-                            <p>
-                                Gestão de desenvolvimento e geoprocessamento no mesmo mandato:
-                                14 pessoas, entrega contínua e qualidade do dado.
+                            <p class="impact-label" data-i18n="skills.peopleLabel">People</p>
+                            <h4 data-i18n="skills.peopleTitle">Leadership of multidisciplinary teams</h4>
+                            <p data-i18n="skills.peopleBody">
+                                One team, Brain → Serasa: 14 people in development and geoprocessing, continuous
+                                delivery, and data quality.
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <p class="impact-label">Decisão</p>
-                            <h4>Crédito, risco, ESG e território</h4>
-                            <p>
-                                Traduzo satélite em evidência para concessão, sinistro, valoração
-                                de imóvel, rastreabilidade e conformidade.
+                            <p class="impact-label" data-i18n="skills.decisionLabel">Decision</p>
+                            <h4 data-i18n="skills.decisionTitle">Credit, risk, ESG, and territory</h4>
+                            <p data-i18n="skills.decisionBody">
+                                I turn satellite data into evidence for credit approval, insurance claims, property
+                                valuation, traceability, and compliance.
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <p class="impact-label">Escala</p>
-                            <h4>Arquitetura de dado nacional</h4>
-                            <p>
-                                Pipelines de imagem, IA e produto digital capazes de operar o
-                                Brasil inteiro com acurácia acima de 90%.
+                            <p class="impact-label" data-i18n="skills.scaleLabel">Scale</p>
+                            <h4 data-i18n="skills.scaleTitle">National-scale data architecture</h4>
+                            <p data-i18n="skills.scaleBody">
+                                Imagery pipelines, AI, and a digital product able to operate across all of Brazil with
+                                accuracy above 90%.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="card stack-card">
                     <div class="card-content">
-                        <h4>Ferramentas que uso para entregar</h4>
-                        <p class="stack-note">
-                            O stack sustenta a operação. Não é o posicionamento.
+                        <h4 data-i18n="skills.toolsTitle">Tools I use to deliver</h4>
+                        <p class="stack-note" data-i18n="skills.toolsNote">
+                            These tools keep the operation running. The positioning is the decision they support.
                         </p>
                         <p class="stack-list">
                             Python · Django · Google Earth Engine · TensorFlow · GDAL ·
@@ -1044,32 +1122,30 @@
         </section>
 
         <section id="educacao" class="section scrollspy">
-            <h3 class="page-title">Formação</h3>
+            <h3 class="page-title" data-i18n="education.title">Education</h3>
             <div class="container">
                 <div class="card">
                     <div class="card-content education-compact">
-                        <p>
-                            Formação sustenta o raciocínio. O que o mercado compra é o
-                            problema que eu resolvo.
+                        <p data-i18n="education.intro">
+                            Education supports how I reason about the systems I build.
                         </p>
                         <ul>
-                            <li>
-                                <b>PUC Minas, 2020–2021</b> — Pós-graduação em Inteligência
-                                Artificial e Aprendizado de Máquina.
+                            <li data-i18n-html="education.pucAi">
+                                <b>PUC Minas (Pontifical Catholic University of Minas Gerais), 2020–2021</b> —
+                                Postgraduate specialization in Artificial Intelligence and Machine Learning.
                                 <a target="_blank"
-                                    href="static/publications/MAPEAMENTO INTRA-ANUAL DO USO E COBERTURA DA TERRA UTILIZANDO INTELIGENCIA ARTIFICIAL E SENSORIAMENTO REMOTO.pdf">TCC:
-                                    mapeamento intra-anual de uso da terra</a>.
+                                    href="static/publications/MAPEAMENTO INTRA-ANUAL DO USO E COBERTURA DA TERRA UTILIZANDO INTELIGENCIA ARTIFICIAL E SENSORIAMENTO REMOTO.pdf">Capstone:
+                                    intra-annual land-use mapping</a>.
                             </li>
-                            <li>
-                                <b>PUC Minas, 2019–2020</b> — Pós-graduação em Ciência de Dados
-                                e Big Data.
+                            <li data-i18n-html="education.pucData">
+                                <b>PUC Minas (Pontifical Catholic University of Minas Gerais), 2019–2020</b> —
+                                Postgraduate specialization in Data Science and Big Data.
                                 <a target="_blank"
-                                    href="static/publications/PREVISAO DA TEMPERATURA DO AR NO BRASIL UTILIZANDO ESTACOES METEOROLOGICAS.pdf">TCC:
-                                    previsão de temperatura no Brasil</a>.
+                                    href="static/publications/PREVISAO DA TEMPERATURA DO AR NO BRASIL UTILIZANDO ESTACOES METEOROLOGICAS.pdf">Capstone:
+                                    air-temperature forecasting in Brazil</a>.
                             </li>
-                            <li>
-                                <b>Universidade Federal do Ceará, 2013–2016</b> — Bacharelado em
-                                Sistemas de Informação.
+                            <li data-i18n-html="education.ufc">
+                                <b>Federal University of Ceará, 2013–2016</b> — Bachelor of Information Systems.
                             </li>
                         </ul>
                     </div>
@@ -1078,71 +1154,51 @@
         </section>
 
         <section id="papers" class="section scrollspy">
-            <h3 class="page-title">Pesquisa que virou operação</h3>
+            <h3 class="page-title" data-i18n="papers.title">Research that became operations</h3>
             <div class="container">
                 <div class="card papers-intro">
                     <div class="card-content">
-                        <p>
-                            Publicar não é o produto. Os papers abaixo viraram mapeamento
-                            nacional, método de irrigação do MapBiomas e insumo de política
-                            pública. Mais de 2.000 citações no conjunto da trajetória.
+                        <p data-i18n="papers.intro">
+                            Two different contributions. First author: center pivots (Remote Sensing, 2020) — the
+                            paper I published. Coauthor in the network: the MapBiomas land-use
+                            paper (Souza Jr. et al.) has about 1,800 citations — adoption of the shared infrastructure,
+                            not a personal h-index.
                         </p>
                         <p>
-                            <a aria-label="Ver publicações de Marciano Saraiva no Google Scholar" href="https://scholar.google.com.br/citations?user=Dp2Nx-AAAAAJ"
-                                target="_blank" rel="noopener noreferrer" data-position="top" data-tooltip="Google Scholar — 2.000+ citações"
+                            <a data-i18n-attr="aria-label:papers.scholarAria|data-tooltip:papers.scholarTooltip"
+                                aria-label="View Marciano Saraiva's publications on Google Scholar"
+                                href="https://scholar.google.com.br/citations?user=Dp2Nx-AAAAAJ" target="_blank"
+                                rel="noopener noreferrer" data-position="top" data-tooltip="Google Scholar profile"
                                 class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                 <i class="fa fa-graduation-cap"></i>
                             </a>
-                            <a alt="Meu Google Scholar" href="https://scholar.google.com.br/citations?user=Dp2Nx-AAAAAJ" class="hoverline"
-                                target="_blank" rel="noopener noreferrer">scholar.google.com — 2.000+ citações</a>
+                            <a data-i18n="papers.scholarLink"
+                                href="https://scholar.google.com.br/citations?user=Dp2Nx-AAAAAJ" class="hoverline"
+                                target="_blank" rel="noopener noreferrer">scholar.google.com — profile</a>
                         </p>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col s12">
                         <div class="card">
                             <div class="card-content">
                                 <p>
                                     <span class="card-title">
-                                        <a href="https://doi.org/10.3390/rs12172735" target="_blank" class="hoverline">
-                                            Reconstructing three decades of land use and land cover changes in brazilian
-                                            biomes with landsat archive and earth engine
-                                        </a>
-                                    </span>
-                                </p>
-                                <p class="paper-kicker">MapBiomas · Remote Sensing, 2020 · 1.800+ citações</p>
-                                <p class="text-justify">
-                                    Série anual de uso e cobertura da terra do Brasil (1985–2017)
-                                    produzida pela rede MapBiomas. O dado deixou o paper e passou a
-                                    ser infraestrutura para monitoramento ambiental, crédito rural
-                                    e gestão do território.
-                                </p>
-                                <p>
-                                    <b>DOI:</b> <a href="https://doi.org/10.3390/rs12172735"
-                                        target="_blank">10.3390/rs12172735</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-content">
-                                <p>
-                                    <span class="card-title">
-                                        <a href="https://doi.org/10.3390/rs12030558" target="_blank" class="hoverline">
+                                        <a href="https://doi.org/10.3390/rs12030558" target="_blank" class="hoverline"
+                                            data-i18n="papers.pivotTitle">
                                             Automatic Mapping of Center Pivot Irrigation Systems from Satellite Images
                                             Using Deep Learning
                                         </a>
                                     </span>
                                 </p>
-                                <p class="paper-kicker">Primeiro autor · Remote Sensing, 2020 · 99% de precisão</p>
-                                <p class="text-justify">
-                                    Método de mapeamento automático de pivôs centrais com mais de
-                                    42 mil imagens PlanetScope. 99% de precisão, 88% de recall. Virou
-                                    referência do mapeamento de irrigação do MapBiomas e de estudos
-                                    de demanda hídrica no Brasil e na Bacia do Zambeze.
+                                <p class="paper-kicker" data-i18n="papers.pivotKicker">First author · Remote Sensing,
+                                    2020 · 99% precision</p>
+                                <p class="text-justify" data-i18n="papers.pivotBody">
+                                    This is my paper as first author, separate from the MapBiomas network article. A
+                                    method for automatic mapping of center pivots using more than 42,000 PlanetScope
+                                    images. 99% precision, 88% recall. It became the reference for MapBiomas irrigation
+                                    mapping and for water-demand studies in Brazil and in the Zambezi River Basin.
                                 </p>
                                 <p>
                                     <b>DOI:</b> <a href="https://doi.org/10.3390/rs12030558"
@@ -1152,6 +1208,39 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="https://doi.org/10.3390/rs12172735" target="_blank" class="hoverline"
+                                            data-i18n="papers.landUseTitle">
+                                            Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian
+                                            Biomes with Landsat Archive and Earth Engine
+                                        </a>
+                                    </span>
+                                </p>
+                                <p class="paper-kicker" data-i18n="papers.landUseKicker">Coauthor in the network · Souza
+                                    Jr.
+                                    et al. · Remote Sensing, 2020 · ~1,800 citations</p>
+                                <p class="text-justify" data-i18n="papers.landUseBody">
+                                    Annual land-use and land-cover series for Brazil (1985–2017), produced by the
+                                    MapBiomas network. I am one coauthor on a long author list. The roughly 1,800
+                                    citations measure adoption of that infrastructure, not a personal citation count.
+                                    The data left the paper and became infrastructure for environmental monitoring,
+                                    rural credit, and territorial management.
+                                </p>
+                                <p>
+                                    <b>DOI:</b> <a href="https://doi.org/10.3390/rs12172735"
+                                        target="_blank">10.3390/rs12172735</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col s12">
                         <div class="card">
@@ -1166,12 +1255,12 @@
                                         </a>
                                     </span>
                                 </p>
-                                <p class="paper-kicker">Elsevier, 2025 · aplicação internacional do método de pivôs</p>
-                                <p class="text-justify">
-                                    O mapeamento de pivôs que publiquei em 2020 foi usado para estimar
-                                    demanda hídrica da irrigação e distinguir água superficial de
-                                    subterrânea na Bacia do Zambeze — o método brasileiro operando
-                                    fora do Brasil.
+                                <p class="paper-kicker" data-i18n="papers.zambeziKicker">Elsevier, 2025 · international
+                                    application of the center-pivot method</p>
+                                <p class="text-justify" data-i18n="papers.zambeziBody">
+                                    The center-pivot mapping I published in 2020 was used to estimate irrigation water
+                                    demand and to separate surface water from groundwater in the Zambezi River Basin —
+                                    the Brazilian method operating outside Brazil.
                                 </p>
                                 <p>
                                     <b>DOI:</b> <a href="https://doi.org/10.1016/j.gsd.2025.101421"
@@ -1188,17 +1277,16 @@
                                 <p>
                                     <span class="card-title">
                                         <a href="http://dx.doi.org/10.29327/xix-sbsr.a1" target="_blank"
-                                            class="hoverline">
-                                            Construção de mosaicos temporais normalizados de imagens planet
+                                            class="hoverline" data-i18n="papers.mosaicTitle">
+                                            Construction of Normalized Temporal Mosaics from Planet Imagery
                                         </a>
                                     </span>
                                 </p>
-                                <p class="paper-kicker">NexGenMap · SBSR, 2019</p>
-                                <p class="text-justify">
-                                    Pré-processamento e mosaicos temporais de imagens Planet para
-                                    mapeamento de uso da terra e detecção de interferência na
-                                    paisagem — a camada de dado que antecipou o monitoramento de
-                                    alta frequência no Brasil.
+                                <p class="paper-kicker" data-i18n="papers.mosaicKicker">NexGenMap · SBSR, 2019</p>
+                                <p class="text-justify" data-i18n="papers.mosaicBody">
+                                    Preprocessing and temporal mosaics of Planet imagery for land-use mapping and
+                                    detection of landscape disturbance — the data layer that preceded high-frequency
+                                    monitoring in Brazil.
                                 </p>
                                 <p>
                                     <b>DOI:</b> <a href="http://dx.doi.org/10.29327/xix-sbsr.a1"
@@ -1212,41 +1300,44 @@
         </section>
 
         <section id="contact" class="section scrollspy full-height">
-            <h3 class="page-title">Contato</h3>
+            <h3 class="page-title" data-i18n="contact.title">Contact</h3>
             <div class="container">
                 <div class="card">
                     <div class="card-content">
-                        <p class="contact-lead">
-                            Para recrutadores, executivos e tomadores de decisão: conversas sobre
-                            liderança de produto, inteligência geoespacial e posições em que o
-                            impacto de crédito, risco e ESG precisa de alguém que já entregou isso
-                            em produção.
+                        <p class="contact-lead" data-i18n="contact.lead">
+                            Conversations with partners and operators about the geospatial work I do for credit,
+                            risk, and ESG.
                         </p>
                         <p>
-                            <a aria-label="Ver Marciano Saraiva no LinkedIn" href="https://linkedin.com/in/saraivadev"
-                                target="_blank" data-position="top" data-tooltip="Ver Marciano Saraiva no LinkedIn"
+                            <a data-i18n-attr="aria-label:contact.linkedinAria|data-tooltip:contact.linkedinAria"
+                                aria-label="View Marciano Saraiva on LinkedIn" href="https://linkedin.com/in/saraivadev"
+                                target="_blank" data-position="top" data-tooltip="View Marciano Saraiva on LinkedIn"
                                 class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                 <i class="fa fa-linkedin"></i>
                             </a>
-                            <a alt="Meu LinkedIn" href="http://linkedin.com/in/saraivadev" class="hoverline"
+                            <a data-i18n-attr="alt:contact.linkedinAlt" alt="My LinkedIn"
+                                href="http://linkedin.com/in/saraivadev" class="hoverline"
                                 target="_blank">linkedin.com/in/saraivadev</a>
                         </p>
                         <p>
-                            <a aria-label="Enviar e-mail para Marciano Saraiva" href="mailto:marciano@i2geo.com"
-                                target="_blank" data-position="top" data-tooltip="Enviar e-mail para Marciano Saraiva"
+                            <a data-i18n-attr="aria-label:contact.emailAria|data-tooltip:contact.emailAria"
+                                aria-label="Email Marciano Saraiva" href="mailto:marciano@i2geo.com" target="_blank"
+                                data-position="top" data-tooltip="Email Marciano Saraiva"
                                 class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                 <i class="fa fa-envelope"></i>
                             </a>
-                            <a alt="Meu e-mail" href="mailto:marciano@i2geo.com" class="hoverline"
-                                target="_blank">marciano@i2geo.com</a>
+                            <a data-i18n-attr="alt:contact.emailAlt" alt="My email" href="mailto:marciano@i2geo.com"
+                                class="hoverline" target="_blank">marciano@i2geo.com</a>
                         </p>
                         <p>
-                            <a aria-label="Ver Marciano Saraiva no GitHub" href="https://github.com/saraivaufc"
-                                target="_blank" data-position="top" data-tooltip="Ver Marciano Saraiva no GitHub"
+                            <a data-i18n-attr="aria-label:contact.githubAria|data-tooltip:contact.githubAria"
+                                aria-label="View Marciano Saraiva on GitHub" href="https://github.com/saraivaufc"
+                                target="_blank" data-position="top" data-tooltip="View Marciano Saraiva on GitHub"
                                 class="btn-floating btn-large waves-effect waves-light emerald tooltipped">
                                 <i class="fa fa-github"></i>
                             </a>
-                            <a alt="Meu GitHub" href="http://github.com/saraivaufc" class="hoverline"
+                            <a data-i18n-attr="alt:contact.githubAlt" alt="My GitHub"
+                                href="http://github.com/saraivaufc" class="hoverline"
                                 target="_blank">github.com/saraivaufc</a>
                         </p>
                     </div>
@@ -1297,6 +1388,8 @@
         }
     </script>
 
+    <script src="static/i18n/translations.js"></script>
+    <script src="static/js/i18n.js"></script>
     <script src="static/js/main.js" type="module"></script>
 
     <style></style>
