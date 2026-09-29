@@ -208,6 +208,13 @@ window.SITE_TRANSLATIONS = {
                 summary: "An operational view of INPE deforestation alerts for enforcement and conservation.",
                 body: "I integrated satellite imagery and INPE alerts into a near-real-time monitoring application, so the alert leaves the spreadsheet and reaches the screen of the people doing enforcement.",
                 aria: "Open the Alertas application"
+            },
+            geodescomplicado: {
+                alt: "GeoDescomplicado, a geoprocessing blog",
+                title: "GeoDescomplicado",
+                summary: "A geoprocessing blog I created in 2024.",
+                body: "I write GeoDescomplicado to make geographic information systems easier to apply. The posts cover the methods I use: SIRGAS 2000 and WGS 84, what a projection actually conserves, Cloud Optimized GeoTIFF and GDAL, Sentinel-2 cloud masks in Google Earth Engine, elevation models, and satellite imagery.",
+                aria: "Visit the GeoDescomplicado blog"
             }
         },
         skills: {
@@ -468,6 +475,13 @@ window.SITE_TRANSLATIONS = {
                 summary: "Visualização operacional de alertas de desmatamento do INPE para fiscalização e conservação.",
                 body: "Integrei imagens de satélite e alertas do INPE em um aplicativo de monitoramento quase em tempo real. O objetivo: tirar o alerta da planilha e colocar na tela de quem fiscaliza.",
                 aria: "Visitar o aplicativo Alertas"
+            },
+            geodescomplicado: {
+                alt: "GeoDescomplicado, blog de geoprocessamento",
+                title: "GeoDescomplicado",
+                summary: "Blog de geoprocessamento, desde 2024.",
+                body: "Escrevo o GeoDescomplicado para tornar sistemas de informação geográfica mais fáceis de aplicar. Os textos cobrem o método que eu uso: SIRGAS 2000 e WGS 84, o que uma projeção de fato conserva, Cloud Optimized GeoTIFF e GDAL, máscara de nuvens do Sentinel-2 no Google Earth Engine, modelos de elevação e imagem de satélite.",
+                aria: "Visitar o blog GeoDescomplicado"
             }
         },
         skills: {
